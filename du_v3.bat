@@ -1,5 +1,4 @@
 @echo off
-set sine=""
 REM /*
 rem :::sorry for the encrypted variable names
 rem it is only to make this code more usable
