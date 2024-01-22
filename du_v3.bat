@@ -8,10 +8,9 @@ set /a _HaqImeOYrCv=0
 set _FXvmqrdCeUd=
 set dir_name_EnwSvs=%1
 set dir_name_EnwSXs=%2
-for /f "tokens=*" %%i in ('cd') do set old_d_909232="%%i"
 if not defined dir_name_EnwSXs set dir_name_EnwSXs=""
 if "%dir_name_EnwSXs%"=="_D_" if exist %dir_name_EnwSvs% pushd %dir_name_EnwSvs%
-if "%dir_name_EnwSXs%"=="_D_" (for /f "delims=" %%i in ('dir /b /ad') do echo|set/p=""%%i":"&CALL "%~fp0" "%%i")&pushd %old_d_909232%&goto :eof
+if "%dir_name_EnwSXs%"=="_D_" (for /f "delims=" %%i in ('dir /b /ad') do echo|set/p=""%%i":"&CALL "%~fp0" "%%i")&popd &goto :eof
 :skip
 if exist %dir_name_EnwSvs% dir %dir_name_EnwSvs% 2>NUL 1>NUL
 if exist %dir_name_EnwSvs% if %errorlevel% NEQ 0 echo.&goto :eof
