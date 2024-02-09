@@ -4,7 +4,7 @@ pushd %windir%
 set realtoken=
 :loop
 set /a token+=1
-for /f "skip=4 tokens=%token%" %%i in ('dir *.dll') do (echo %%i|find "," >NUL&&set /a realtoken=token)&goto :move
+for /f "skip=4 tokens=%token%" %%i in ('dir *.exe') do (echo %%i|find "," >NUL&&set /a realtoken=token)&goto :move
 :move
 if defined realtoken goto :next
 goto :loop
