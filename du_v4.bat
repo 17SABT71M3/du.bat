@@ -1,6 +1,6 @@
 @echo off
 set /a token=0
-pushd %windir%
+pushd %windir%\system32
 set realtoken=
 :loop
 set /a token+=1
