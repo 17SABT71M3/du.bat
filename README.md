@@ -6,7 +6,7 @@
 
 
 ```
-SYNTAX: du.bat [filename/filepath]
+SYNTAX: du.bat [filename]
 All other du scripts are deprecated. There needs to be issued fixes.
 U can still use them if they work.
 ```
